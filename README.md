@@ -18,23 +18,16 @@ The model is trained on the Zalando Research Fashion-MNIST dataset:
 
 Results & Visual Evolution
 
-### 1. Initial Training (Epoch 10 to 50)
+### 1. Training (Epoch 10 to 50 and beyond)
 During the early stages, the model establishes the basic geometric structures of clothing. By Epoch 50, the adversarial game reaches a stable equilibrium.
 
-![Evolution 10 to 50](evolution_10_50.jpg)
-*Metrics at Epoch 50: Gen Loss: 1.6770 / Disc Loss: 0.7938*
+<img src="evolution_10_50.jpg" width="600">
 
 ### 2. Post-Processing: Sharpening Filter
-To resolve semantic blurring inherent in low-resolution GAN outputs, I implemented a PIL-based sharpening pipeline (factor 2.0). This enhances edge definition for complex items like footwear and collars.
-
-![Sharpened Results](sharpened_50.jpg)
+<img src="sharpened_50.jpg" width="250">
 
 ### 3. Scaling & Long-Term Convergence (270 vs 500 Epochs)
-To analyze the model's capacity for detail, I extended training to 500 epochs. This comparison demonstrates the trade-off between training time and the refinement of high-frequency textures.
-
-![Long Term Comparison](long_term_training.jpg)
-
----
+<img src="long_term_training.jpg" width="600">
 
 ## 📁 Repository Structure
 * `PROJECT-GAN.ipynb`: Core training notebook containing the model architecture and custom training loop.
