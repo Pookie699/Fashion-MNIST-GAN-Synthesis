@@ -21,7 +21,7 @@ Results & Visual Evolution
 ### 1. Training (Epoch 10 to 50 and beyond)
 During the early stages, the model establishes the basic geometric structures of clothing. By Epoch 50, the adversarial game reaches a stable equilibrium.
 
-<img src="evolution_10_50.jpg" width="600">
+<img src="evolution_10_50.jpg">
 
 ### 2. Post-Processing: Sharpening Filter
 <img src="sharpened_50.jpg" width="250">
